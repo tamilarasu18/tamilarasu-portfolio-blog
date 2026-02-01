@@ -1,0 +1,18 @@
+{
+  "title": "test",
+  "slug": "test",
+  "content": "<p>test</p>",
+  "excerpt": "test",
+  "coverImage": null,
+  "author": {
+    "name": "Tamilarasu",
+    "avatar": "/tamilarasu-photo.png"
+  },
+  "createdAt": "2026-02-01T18:54:29.949Z",
+  "updatedAt": "2026-02-01T18:54:29.949Z",
+  "tags": [
+    "test",
+    "test1"
+  ],
+  "readingTime": 1
+}
