@@ -1,0 +1,21 @@
+{
+  "title": "Getting Started with Ollama: Run LLMs Locally",
+  "slug": "getting-started-with-ollama-run-llms-locally",
+  "content": "Ollama is a game-changer for developers and AI enthusiasts who want to run large language models (LLMs) locally. In this post, we'll explore what Ollama is, why strictly local AI matters, and how to get it running on your machine in minutes.\n\n![Ollama Architecture](https://raw.githubusercontent.com/tamilarasu18/tamilarasu-portfolio-blog/main/media/2026-02-03/1770140980960-ollama-network-diagram-1770140766036.png)\n\n## What is Ollama?\n\nOllama is an open-source framework that simplifies running LLMs like **Llama 3**, **Mistral**, and **Gemma** on your own hardware. It bundles the model weights, configuration, and data into a single package, managed by a simple `Modelfile`.\n\nThink of it like Docker, but for LLMs. It handles the complexity of setting up the environment, allowing you to focus on interacting with the models.\n\n## Why Run Locally?\n\nRunning models locally isn't just a tech flex; it has practical benefits:\n\n- **Privacy**: Your data never leaves your device. Perfect for sensitive documents or proprietary code.\n- **Cost**: No API fees. Run tokens to your heart's content.\n- **Latency**: Faster response times since there's no network overhead (dependent on your GPU/CPU).\n- **Offline Access**: innovative on a plane or in a remote cabin without internet.\n\n## Installation Guide\n\nGetting started is surprisingly easy.\n\n### Windows\n1.  Download the setup file from the [official website](https://ollama.com).\n2.  Run the `.exe` installer.\n3.  Open PowerShell and type `ollama` to verify the installation.\n\n### macOS\n1.  Download the zip from ollama.com.\n2.  Drag the app to your Applications folder.\n3.  Run it to install the command-line tools.\n\n### Linux\nOne-line install script:\n```bash\ncurl -fsSL https://ollama.com/install.sh | sh\n```\n\n## Running Your First Model\n\nOnce installed, open your terminal. To run the latest Llama 3 model, simply execute:\n\n```bash\nollama run llama3\n```\n\nOllama will automatically pull the model manifest, download the layers, and verify the hash. Once done, you'll be dropped into a chat prompt.\n\n### Other Useful Commands\n\n- `ollama list`: See installed models.\n- `ollama pull <model>`: Download a model without running it.\n- `ollama rm <model>`: Remove a model to free up space.\n\n## Conclusion\n\nOllama democratizes access to powerful AI. Whether you're building a privacy-focused app or just experimenting with the latest open weights, it's an essential tool in the modern developer's toolkit.",
+  "excerpt": "Ollama is a game-changer for developers and AI enthusiasts who want to run large language models (LLMs) locally. In this post, we'll explore what Ollama is, why...",
+  "coverImage": "https://raw.githubusercontent.com/tamilarasu18/tamilarasu-portfolio-blog/main/media/2026-02-03/1770140978709-ollama-cover-image-1770140744174.png",
+  "author": {
+    "name": "Tamilarasu",
+    "avatar": "/avatar.png"
+  },
+  "createdAt": "2026-02-03T17:49:42.003Z",
+  "updatedAt": "2026-02-03T17:49:42.003Z",
+  "tags": [
+    "AI",
+    "Ollama",
+    "LLM",
+    "Local Development",
+    "Tutorial"
+  ],
+  "readingTime": 2
+}
