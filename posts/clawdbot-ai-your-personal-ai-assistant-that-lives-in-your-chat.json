@@ -17,17 +17,5 @@
     "whatsapp",
     "telegram"
   ],
-  "readingTime": 4,
-  "engagement": {
-    "likes": 1,
-    "dislikes": 1
-  },
-  "comments": [
-    {
-      "id": "comment-1770219677708-0nspq8md9",
-      "author": "Test User",
-      "content": "This is a test comment to verify the functionality works!",
-      "createdAt": "2026-02-04T15:41:17.708Z"
-    }
-  ]
+  "readingTime": 4
 }
