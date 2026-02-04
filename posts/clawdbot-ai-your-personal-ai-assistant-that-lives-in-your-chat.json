@@ -17,5 +17,9 @@
     "whatsapp",
     "telegram"
   ],
-  "readingTime": 4
+  "readingTime": 4,
+  "engagement": {
+    "likes": 1,
+    "dislikes": 0
+  }
 }
