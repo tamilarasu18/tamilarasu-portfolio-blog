@@ -17,5 +17,9 @@
     "github",
     "local model"
   ],
-  "readingTime": 3
+  "readingTime": 3,
+  "engagement": {
+    "likes": 1,
+    "dislikes": 0
+  }
 }
