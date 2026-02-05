@@ -21,5 +21,13 @@
   "engagement": {
     "likes": 1,
     "dislikes": 0
-  }
+  },
+  "comments": [
+    {
+      "id": "comment-1770304196827-omb0bzy8p",
+      "author": "Mahadeer",
+      "content": "Your explanation clearly highlights a real and relatable problem with traditional stock photo search.\nThe transition to your solution is concise and easy to understand.\nMentioning Ollama and Gemma 3 (4b) adds credibility and technical depth.\nOverall, the concept feels modern, practical, and immediately valuable for creators and developers.\n\nThank you so much",
+      "createdAt": "2026-02-05T15:09:56.827Z"
+    }
+  ]
 }
