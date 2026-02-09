@@ -1,0 +1,21 @@
+{
+  "title": "🚨 Huge Update: Ollama Now Generates Images Locally! 🎨",
+  "slug": "huge-update-ollama-now-generates-images-locally",
+  "content": "<p>The days of using <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"text-[#2563EB] hover:underline cursor-pointer ql-mention\" href=\"https://www.linkedin.com/feed/#\"><strong>Ollama</strong></a> just for text are officially over. Experimental support for native image generation has dropped, and it’s a game-changer for local AI.</p><p></p><p>You can now run powerful vision models directly from your terminal—no complex Stable Diffusion WebUI setups required.</p><p></p><p>🚀 Top Models to Try:</p><p>x/z-image-turbo: Best for photorealistic portraits and scenes.</p><p>x/flux2-klein: Incredible at rendering text inside images (perfect for UI mockups).</p><p></p><p>💻 Try it yourself: ollama run x/z-image-turbo \"A futuristic city with flying cars, photorealistic\"</p><p></p><p>It saves the image directly to your local folder and even previews it inline if you use terminals like Ghostty or iTerm2.</p><p></p><p>Who else is moving their creative stack offline?&nbsp;</p>",
+  "excerpt": "The days of using Ollama just for text are officially over. Experimental support for native image generation has dropped, and it’s a game-changer for local AI.Y...",
+  "coverImage": "https://raw.githubusercontent.com/tamilarasu18/tamilarasu-portfolio-blog/main/media/2026-02-09/1770648268251-c23ee77a-1d50-4f70-a11e-8bcf20bac984.png",
+  "author": {
+    "name": "Tamilarasu",
+    "avatar": "/avatar.png"
+  },
+  "createdAt": "2026-02-09T14:45:15.755Z",
+  "updatedAt": "2026-02-09T14:45:15.755Z",
+  "tags": [
+    "localllm",
+    "offlineai",
+    "fluxmodel",
+    "ollama",
+    "generativeai"
+  ],
+  "readingTime": 1
+}
