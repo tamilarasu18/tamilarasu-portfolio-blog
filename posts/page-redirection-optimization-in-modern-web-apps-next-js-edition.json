@@ -1,0 +1,21 @@
+{
+  "title": "🚀 Page Redirection Optimization in Modern Web Apps (Next.js Edition)",
+  "slug": "page-redirection-optimization-in-modern-web-apps-next-js-edition",
+  "content": "<p>One thing I’ve realized while building production apps with <strong>Next.js</strong> — users don’t measure your app by features.<br>They measure it by <em>how fast it feels</em>.</p><p>A 500ms delay during redirection can silently damage user experience.</p><p>Here are the techniques I use to make navigation feel instant:</p><hr><p>🔹 <code>&lt;Link&gt;</code><strong> Prefetching — Predictive Caching</strong><br>Next.js preloads page code before the user clicks.<br>Result? Near-instant route transitions.</p><hr><p>🔹 <strong>SWR / React Query — Stale While Revalidate</strong><br>Using <strong>SWR</strong> or <strong>React Query</strong> allows cached data to render immediately while fetching fresh data in the background.<br>No spinner. No blocking.</p><hr><p>🔹 <strong>Server Components (RSC)</strong><br>With React Server Components in <strong>Next.js</strong>, we eliminate the client-side data-fetch waterfall.<br>Data is fetched on the server → streamed → hydrated selectively.<br>Less JS. Faster render.</p><hr><p>🔹 <strong>Skeleton UI — Optimistic Rendering</strong><br>Instead of showing a blank page during redirect, show structure instantly.<br>Users perceive speed when layout loads immediately.</p><hr><p>🔹 <code>Promise.all()</code><strong> — Parallel Data Fetching</strong><br>Never fetch sequentially when you can fetch in parallel.<br>Cut redirect latency by 30–50% in complex dashboards.</p><hr><p>🔹 <code>getSession()</code><strong> Caching (JWT Strategy)</strong><br>If you’re using <strong>NextAuth.js</strong>, avoid repeated DB session checks.<br>Switch to JWT-based sessions to remove unnecessary round trips.</p><hr><p>💡 Final Insight:</p><p>Fast apps are not built by accident.<br>They’re built by eliminating every unnecessary waiting layer — network, JS, auth, and rendering waterfalls.</p><p>Navigation performance is what separates a <em>project</em> from a <em>product</em>.</p><p>#NextJS #WebPerformance #Frontend #FullStack #React #SoftwareEngineering</p>",
+  "excerpt": "One thing I’ve realized while building production apps with Next.js — users don’t measure your app by features.They measure it by how fast it feels.A 500ms dela...",
+  "coverImage": "https://raw.githubusercontent.com/tamilarasu18/tamilarasu-portfolio-blog/main/media/2026-02-21/1771682010944-ChatGPT-Image-Feb-21--2026--07-22-43-PM.png",
+  "author": {
+    "name": "Tamilarasu",
+    "avatar": "/avatar.png"
+  },
+  "createdAt": "2026-02-21T13:54:38.329Z",
+  "updatedAt": "2026-02-21T13:54:38.329Z",
+  "tags": [
+    "nextjs",
+    "webperformance",
+    "frontend",
+    "fullstack",
+    "softwareengineering"
+  ],
+  "readingTime": 2
+}
