@@ -1,0 +1,21 @@
+{
+  "title": "Array Pattern – Missing Number",
+  "slug": "array-pattern-missing-number",
+  "content": "<h1>Missing Number Problem</h1><h3>Problem</h3><p>Find the missing number from <strong>0 to n</strong>.</p><p>Example:</p><pre><code>Input: [3,0,1]\nOutput: 2</code></pre><p>Numbers should be:</p><pre><code>0,1,2,3</code></pre><p>But <strong>2 is missing</strong>.</p><hr><h1>Method 1 — Sum Formula Method (Best Beginner Method)</h1><h3>Idea</h3><p>Use mathematical formula:</p><pre><code>Sum of first n numbers = n * (n + 1) // 2</code></pre><p>Then subtract actual sum.</p><hr><h3>Python Code</h3><pre><code>def missing_number_sum(nums):\n    n = len(nums)\n\n    expected_sum = n * (n + 1) // 2\n    actual_sum = sum(nums)\n\n    return expected_sum - actual_sum</code></pre><hr><h3>Explanation</h3><p>Example:</p><pre><code>nums = [3,0,1]</code></pre><p>Length:</p><pre><code>n = 3</code></pre><p>Expected sum:</p><pre><code>3 * (3 + 1) // 2\n= 3 * 4 // 2\n= 12 // 2\n= 6</code></pre><p>Actual sum:</p><pre><code>3 + 0 + 1 = 4</code></pre><p>Missing number:</p><pre><code>6 - 4 = 2</code></pre><hr><h3>Complexity</h3><pre><code>Time Complexity: O(n)\nSpace Complexity: O(1)</code></pre><hr><h1>Method 2 — Boolean Array Method</h1><h3>Idea</h3><p>Mark numbers that appear.</p><p>Then find the missing one.</p><hr><h3>Python Code</h3><pre><code>def missing_number_boolean(nums):\n    n = len(nums)\n    visited = [False] * (n + 1)\n\n    for num in nums:\n        visited[num] = True\n\n    for i in range(n + 1):\n        if not visited[i]:\n            return i</code></pre><hr><h3>Explanation</h3><p>Example:</p><pre><code>nums = [3,0,1]</code></pre><p>Boolean array:</p><pre><code>index:   0 1 2 3\nvisited: T F F T</code></pre><p>Number <strong>2 is False → missing</strong>.</p><hr><h3>Complexity</h3><pre><code>Time Complexity: O(n)\nSpace Complexity: O(n)</code></pre><hr><h1>Method 3 — XOR Method (Interview Favorite)</h1><h3>Idea</h3><p>Use <strong>XOR operation</strong>.</p><p>Key properties:</p><pre><code>a ^ a = 0\na ^ 0 = a</code></pre><p>So duplicates cancel out.</p><hr><h3>Python Code</h3><pre><code>def missing_number_xor(nums):\n    n = len(nums)\n    xor = 0\n\n    for i in range(n + 1):\n        xor ^= i\n\n    for num in nums:\n        xor ^= num\n\n    return xor</code></pre><hr><h3>Explanation</h3><p>Example:</p><pre><code>nums = [3,0,1]</code></pre><p>XOR of all numbers:</p><pre><code>0 ^ 1 ^ 2 ^ 3</code></pre><p>XOR of array:</p><pre><code>3 ^ 0 ^ 1</code></pre><p>Cancelling common numbers:</p><pre><code>2 remains</code></pre><p>So <strong>missing number = 2</strong></p><hr><h1>🧠 Pattern Recognition Trick</h1><p>If problem says:</p><pre><code>numbers range from 0 → n\nor\nnumbers range from 1 → n</code></pre><p>Immediately think:</p><ul><li><p>Sum formula</p></li><li><p>Boolean array</p></li><li><p>XOR trick</p></li></ul><p></p>",
+  "excerpt": "Missing Number ProblemProblemFind the missing number from 0 to n.Example:Input: [3,0,1]\nOutput: 2Numbers should be:0,1,2,3But 2 is missing.Method 1 — Sum Formul...",
+  "coverImage": null,
+  "author": {
+    "name": "Tamilarasu",
+    "avatar": "/avatar.png"
+  },
+  "createdAt": "2026-03-06T06:46:29.582Z",
+  "updatedAt": "2026-03-06T06:46:29.582Z",
+  "tags": [
+    "missing number",
+    "dsa",
+    "dsa roadmap",
+    "learn with me",
+    "dsa learning"
+  ],
+  "readingTime": 2
+}
