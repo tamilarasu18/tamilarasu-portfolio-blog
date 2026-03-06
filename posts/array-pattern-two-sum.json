@@ -1,0 +1,20 @@
+{
+  "title": "Array Pattern - Two Sum",
+  "slug": "array-pattern-two-sum",
+  "content": "<pre><code>def two_sum(nums, target):\n\n    seen = {}   # store number : index\n\n    for i, num in enumerate(nums):\n\n        diff = target - num\n\n        # check if the required number already exists\n        if diff in seen:\n            return [seen[diff], i]\n\n        # otherwise store the number\n        seen[num] = i</code></pre><hr><h1>Step-by-Step Example</h1><pre><code>nums = [2,7,11,15]\ntarget = 9</code></pre><h3>Step 1</h3><pre><code>num = 2\ndiff = 9 - 2 = 7\n\nseen = {2:0}</code></pre><hr><h3>Step 2</h3><pre><code>num = 7\ndiff = 9 - 7 = 2\n\n2 already exists in seen</code></pre><p>So we found the pair.</p><pre><code>return [0,1]</code></pre><hr><h1>Example Run</h1><pre><code>nums = [2,7,11,15]\ntarget = 9\n\nprint(two_sum(nums, target))</code></pre><p>Output</p><pre><code>[0,1]</code></pre><p></p>",
+  "excerpt": "def two_sum(nums, target):\n\n    seen = {}   # store number : index\n\n    for i, num in enumerate(nums):\n\n        diff = target - num\n\n        # check if the requ...",
+  "coverImage": null,
+  "author": {
+    "name": "Tamilarasu",
+    "avatar": "/avatar.png"
+  },
+  "createdAt": "2026-03-06T10:24:49.440Z",
+  "updatedAt": "2026-03-06T10:24:49.440Z",
+  "tags": [
+    "two sum",
+    "dsa learning",
+    "dsa",
+    "learn with me"
+  ],
+  "readingTime": 1
+}
