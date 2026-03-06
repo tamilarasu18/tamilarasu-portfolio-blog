@@ -1,0 +1,21 @@
+{
+  "title": "Array Pattern – Duplicate",
+  "slug": "array-pattern-duplicate",
+  "content": "<h1>Duplicate Number Problem</h1><h3>Problem</h3><p>Given an array of size <strong>n + 1</strong> containing numbers from <strong>1 to n</strong>,<br>find the <strong>duplicate number</strong>.</p><p>Example:</p><pre><code>Input: [1,3,4,2,2]\nOutput: 2</code></pre><hr><h1>Method 1 — Using Set (Easy Method)</h1><h3>Idea</h3><p>A <strong>set cannot contain duplicates</strong>.<br><br>So while iterating, if a number already exists in the set → it is duplicate.</p><h3>Python Code</h3><pre><code>def find_duplicate_set(nums):\n    seen = set()\n\n    for num in nums:\n        if num in seen:\n            return num\n        seen.add(num)</code></pre><h3>Explanation</h3><p>Step-by-step:</p><ol><li><p>Create an empty <strong>set</strong></p></li><li><p>Loop through the array</p></li><li><p>Check:</p><ul><li><p>If number already in set → duplicate found</p></li></ul></li><li><p>Otherwise add it to set</p></li></ol><h3>Complexity</h3><pre><code>Time Complexity: O(n)\nSpace Complexity: O(n)</code></pre><hr><h1>Method 2 — Sorting Method</h1><h3>Idea</h3><p>If the array is <strong>sorted</strong>, duplicate numbers will be <strong>next to each other</strong>.</p><p>Example:</p><pre><code>Original:\n[1,3,4,2,2]\n\nSorted:\n[1,2,2,3,4]</code></pre><p>Now the duplicate is easy to detect.</p><h3>Python Code</h3><pre><code>def find_duplicate_sort(nums):\n    nums.sort()\n\n    for i in range(1, len(nums)):\n        if nums[i] == nums[i-1]:\n            return nums[i]</code></pre><h3>Explanation</h3><ol><li><p>Sort the array</p></li><li><p>Loop through array</p></li><li><p>Compare current element with previous</p></li><li><p>If equal → duplicate found</p></li></ol><h3>Complexity</h3><pre><code>Time Complexity: O(n log n)\nSpace Complexity: O(1)</code></pre><hr><h1>Method 3 — Boolean Array Method</h1><h3>Idea</h3><p>Use a <strong>boolean array to track visited numbers</strong>.</p><p>Example:</p><pre><code>nums = [1,3,4,2,2]\nvisited = [False, False, False, False, False]</code></pre><p>When a number appears again → duplicate.</p><h3>Python Code</h3><pre><code>def find_duplicate_boolean(nums):\n    visited = [False] * (len(nums) + 1)\n\n    for num in nums:\n        if visited[num]:\n            return num\n        visited[num] = True</code></pre><h3>Explanation</h3><ol><li><p>Create a boolean array</p></li><li><p>Initially all values are <strong>False</strong></p></li><li><p>When a number appears:</p><ul><li><p>mark it <strong>True</strong></p></li></ul></li><li><p>If already True → duplicate</p></li></ol><h3>Complexity</h3><pre><code>Time Complexity: O(n)\nSpace Complexity: O(n)</code></pre><p></p>",
+  "excerpt": "Duplicate Number ProblemProblemGiven an array of size n + 1 containing numbers from 1 to n,find the duplicate number.Example:Input: [1,3,4,2,2]\nOutput: 2Method...",
+  "coverImage": null,
+  "author": {
+    "name": "Tamilarasu",
+    "avatar": "/avatar.png"
+  },
+  "createdAt": "2026-03-06T06:44:41.066Z",
+  "updatedAt": "2026-03-06T06:44:41.066Z",
+  "tags": [
+    "dsa",
+    "dsa roadmap",
+    "dsa array",
+    "array",
+    "duplicate"
+  ],
+  "readingTime": 2
+}
