@@ -1,0 +1,20 @@
+{
+  "title": "Supercharge Your AI Coding Agent — Meet Antigravity Skills",
+  "slug": "supercharge-your-ai-coding-agent-meet-antigravity-skills",
+  "content": "<p>AI coding assistants like Claude Code, Gemini CLI, Cursor, and Copilot are powerful — but they lack <em>specialized knowledge</em>. That's where <strong>Skills</strong> come in.</p><p>Skills are small, reusable markdown playbooks that teach your AI agent how to do specific tasks <em>perfectly</em>, every time — from brainstorming &amp; architecture design to security audits &amp; deployment.</p><p>Two repos you need to know about:</p><p>🌌 <strong>Antigravity Awesome Skills</strong> — A massive library of <strong>1,232+ battle-tested agentic skills</strong> covering planning, coding, debugging, testing, security, infrastructure, and more. One <code>npx</code> install and your agent levels up instantly. 🔗 github.com/sickn33/antigravity-awesome-skills</p><p>🎨 <strong>UI UX Pro Max</strong> — An AI skill that gives your agent <strong>design intelligence</strong>. It ships with 67 UI styles, 96 color palettes, 57 font pairings, 99 UX guidelines, and 100 industry-specific reasoning rules. v2.0's flagship feature? An AI-powered Design System Generator that builds a complete, tailored design system for your project in seconds. 🔗 github.com/nextlevelbuilder/ui-ux-pro-max-skill</p><p>💡 <strong>TL;DR:</strong> Skills turn a general-purpose AI into a domain expert. Install them once, use them everywhere — Claude Code, Cursor, Gemini CLI, Copilot, Codex, and more.</p><p>The future of coding isn't just AI — it's <strong>skilled</strong> AI. ⚡</p><p>#AI #AIAgents #AntigravitySkills #ClaudeCode #Cursor #GeminiCLI #UIUXDesign #DeveloperTools #OpenSource #CodingWithAI #Productivity</p>",
+  "excerpt": "AI coding assistants like Claude Code, Gemini CLI, Cursor, and Copilot are powerful — but they lack specialized knowledge. That's where Skills come in.Skills ar...",
+  "coverImage": null,
+  "author": {
+    "name": "Tamilarasu",
+    "avatar": "/avatar.png"
+  },
+  "createdAt": "2026-03-09T04:36:25.083Z",
+  "updatedAt": "2026-03-09T04:36:25.083Z",
+  "tags": [
+    "antigravityskills",
+    "opensource",
+    "codingwithai",
+    "productivity"
+  ],
+  "readingTime": 1
+}
