@@ -1,0 +1,21 @@
+{
+  "title": "Best Time to Buy and Sell Stock – One Pass Solution",
+  "slug": "best-time-to-buy-and-sell-stock-one-pass-solution",
+  "content": "<p>One of the most common beginner problems in Data Structures and Algorithms is <strong>Best Time to Buy and Sell Stock</strong>.</p><p>This problem is popular in coding interviews because it teaches an important pattern: <strong>tracking minimum values while maximizing profit in a single pass</strong>.</p><hr><h1>Problem Statement</h1><p>You are given an array where:</p><pre><code>prices[i] = price of a stock on day i</code></pre><p>Rules:</p><ul><li><p>You can <strong>buy one stock and sell one stock</strong></p></li><li><p>You must <strong>buy before you sell</strong></p></li><li><p>Return the <strong>maximum possible profit</strong></p></li><li><p>If no profit is possible, return <strong>0</strong></p></li></ul><p>Example:</p><pre><code>Input: [7,1,5,3,6,4]\nOutput: 5</code></pre><p>Explanation:</p><pre><code>Buy at 1\nSell at 6\nProfit = 5</code></pre><hr><h1>Brute Force Approach</h1><p>The most straightforward solution is:</p><ol><li><p>Try buying on every day.</p></li><li><p>Try selling on every later day.</p></li><li><p>Compute the profit.</p></li><li><p>Keep the maximum.</p></li></ol><p>Pseudo logic:</p><pre><code>for i in range(n):\n    for j in range(i+1, n):\n        profit = prices[j] - prices[i]</code></pre><p>Time Complexity:</p><pre><code>O(n²)</code></pre><p>This approach becomes <strong>too slow for large inputs</strong>.</p><hr><h1>Optimal Approach (One Pass)</h1><p>Instead of checking all pairs, we can track:</p><ul><li><p>The <strong>minimum price seen so far</strong></p></li><li><p>The <strong>maximum profit</strong></p></li></ul><p>Key idea:</p><pre><code>Profit = currentPrice - minimumPriceSeenSoFar</code></pre><p>Every day we ask:</p><blockquote><p>If I sell today, what is the cheapest price I could have bought earlier?</p></blockquote><hr><h1>Step-by-Step Example</h1><p>Array:</p><pre><code>[7,1,5,3,6,4]</code></pre><p>DayPriceMin PriceProfitMax Profit177002110035144431245615564135</p><p>Final Answer:</p><pre><code>5</code></pre><hr><h1>Algorithm</h1><ol><li><p>Initialize:</p><pre><code>minPrice = ∞\nmaxProfit = 0</code></pre></li><li><p>Traverse the array</p></li><li><p>Update minimum price</p></li><li><p>Calculate today's profit</p></li><li><p>Update maximum profit</p></li></ol><hr><h1>Implementation (JavaScript)</h1><pre><code>function maxProfit(prices) {\n    let minPrice = Infinity\n    let maxProfit = 0\n\n    for (let price of prices) {\n        minPrice = Math.min(minPrice, price)\n        let profit = price - minPrice\n        maxProfit = Math.max(maxProfit, profit)\n    }\n\n    return maxProfit\n}</code></pre><hr><h1>Complexity Analysis</h1><p>Time Complexity:</p><pre><code>O(n)</code></pre><p>Space Complexity:</p><pre><code>O(1)</code></pre><p>The algorithm scans the array <strong>only once</strong>, making it highly efficient.</p><hr><h1>Edge Case</h1><p>If prices always decrease:</p><pre><code>[9,8,7,6,5]</code></pre><p>There is <strong>no opportunity to make profit</strong>, so the answer is:</p><pre><code>0</code></pre><hr><h1>Key Takeaway</h1><p>This problem teaches a very powerful pattern:</p><pre><code>Track Minimum → Calculate Difference → Track Maximum</code></pre><p>This concept appears in many interview problems such as:</p><ul><li><p>Maximum difference in arrays</p></li><li><p>Stock trading variations</p></li><li><p>Kadane-style optimization problems</p></li></ul><p>Mastering this pattern will help you solve many <strong>array optimization problems efficiently</strong>.</p>",
+  "excerpt": "One of the most common beginner problems in Data Structures and Algorithms is Best Time to Buy and Sell Stock.This problem is popular in coding interviews becau...",
+  "coverImage": null,
+  "author": {
+    "name": "Tamilarasu",
+    "avatar": "/avatar.png"
+  },
+  "createdAt": "2026-03-11T09:28:09.033Z",
+  "updatedAt": "2026-03-11T09:28:09.033Z",
+  "tags": [
+    "dsa",
+    "dsa learning",
+    "buy and sell problem",
+    "learn with me",
+    "mnc"
+  ],
+  "readingTime": 2
+}
