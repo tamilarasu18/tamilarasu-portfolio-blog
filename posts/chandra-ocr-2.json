@@ -1,0 +1,21 @@
+{
+  "title": "Chandra OCR 2",
+  "slug": "chandra-ocr-2",
+  "content": "<p>🚀 Struggling with messy PDFs, complex tables, or handwritten forms? Meet your new secret weapon: Chandra OCR 2! 🚀</p><p>If you've ever tried to extract structured data from complex documents, you know the pain. Tables break, math equations turn into gibberish, and layouts get completely scrambled. Traditional OCR tools just don't cut it anymore.</p><p>That's why I'm incredibly excited to highlight Chandra OCR 2 by Datalab—a State-of-the-Art Vision-Language Model that is fundamentally changing how we approach Document Intelligence.</p><p>Here’s why Chandra 2 is an absolute game-changer for developers, AI engineers, and data teams:</p><p>📊 Flawless Layouts &amp; Tables: Transforms complex PDFs, scans, and images into clean, structured Markdown, HTML, or JSON while perfectly preserving the original layout. Yes, even tricky multi-column pages! ✍️ Master of Handwriting &amp; Forms: Accurately reads cursive handwriting and reconstructs forms flawlessly (it even accurately detects checkboxes ✅). 🧮 Advanced Math: Handles complex mathematical equations out of the box. 🌍 Truly Global: Support for 90+ languages with industry-leading multilingual capabilities. 🖼️ Smart Image Extraction: Automatically parses diagrams and images, adding helpful captions and structured context. ⚡ Flexible Inference: Run it completely locally via HuggingFace for absolute data privacy, or scale it in production using their optimized vLLM server.</p><p>🏆 Need proof? Chandra 2 currently tops the widely-respected external olmocr benchmark, and significantly outperforms leading models (like Gemini 2.5 Flash) on comprehensive 90-language multilingual benchmarks!</p><p>Whether you're building RAG pipelines, automating data entry, or processing historical documents, high-quality data extraction is the necessary foundation. High-quality inputs = high-quality outputs.</p><p>It's accessible and available right now! 🔗 Check out the GitHub repo and give it a star: <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"text-[#2563EB] hover:underline cursor-pointer\" href=\"https://github.com/datalab-to/chandra\">https://github.com/datalab-to/chandra</a> 🎮 Want to see it in action without installing? Try the free playground: <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"text-[#2563EB] hover:underline cursor-pointer\" href=\"https://www.datalab.to/playground\">https://www.datalab.to/playground</a> 🚀 Looking for blazing speed and even higher accuracy? Check out their Hosted API.</p><p>Have you built anything with Chandra yet? Or what's your biggest pain point with current OCR tools? Let's discuss in the comments! 👇</p><p>#AI #MachineLearning #LLM #DocumentIntelligence #OCR #DataScience #DataEngineering #OpenSource #RAG #Python #Datalab #TechInnovation #GenerativeAI</p>",
+  "excerpt": "🚀 Struggling with messy PDFs, complex tables, or handwritten forms? Meet your new secret weapon: Chandra OCR 2! 🚀If you've ever tried to extract structured da...",
+  "coverImage": "https://raw.githubusercontent.com/tamilarasu18/tamilarasu-portfolio-blog/main/media/2026-03-30/1774851453300-chandra-ocr-linkedin-banner-1774851254795.png",
+  "author": {
+    "name": "Tamilarasu",
+    "avatar": "/avatar.png"
+  },
+  "createdAt": "2026-03-30T06:18:30.158Z",
+  "updatedAt": "2026-03-30T06:18:30.158Z",
+  "tags": [
+    "machinelearning",
+    "ai",
+    "llm",
+    "documentintelligence",
+    "ocr"
+  ],
+  "readingTime": 2
+}
